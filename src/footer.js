@@ -31,10 +31,10 @@ const Footer = () => {
               Taakulo
             </Typography>
           </Grid>
-          <Grid item>
+          <Grid item mt={2}>
             <Typography variant="p">Lorem Ipsum</Typography>
           </Grid>
-          <Grid item>
+          <Grid item py={3}>
             <Button variant="contained" color="substitute">
               Button Text
             </Button>

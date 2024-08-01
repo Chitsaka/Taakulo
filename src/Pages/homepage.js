@@ -214,7 +214,7 @@ const Homepage = () => {
         </Paper>
       </Box>
       <Container>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} py={3}>
           <Grid item md={4}>
             <Typography variant="h5">1. Start your Fundraiser</Typography>
             <ul>
@@ -245,7 +245,7 @@ const Homepage = () => {
         </Button>
       </Container>
       <Container sx={{ p: 3 }}>
-        <Typography variant="h4" textAlign={"center"}>
+        <Typography variant="h4" textAlign={"center"} pt={10}>
           {" "}
           Donate now with
         </Typography>
