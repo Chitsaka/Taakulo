@@ -213,34 +213,39 @@ const Homepage = () => {
           </Card>
         </Paper>
       </Box>
-      <Container>
+      <Container sx={{ justifyContent: "center" }}>
         <Grid container spacing={2} py={3}>
-          <Grid item md={4}>
+          <Grid item md={4} xs={6}>
             <Typography variant="h5">1. Start your Fundraiser</Typography>
             <ul>
               <li>Set your fundraiser goal </li>
               <li>Tell your story </li>
             </ul>
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={4} xs={6}>
             <Typography variant="h5">2.Share with others</Typography>
             <ul>
               <li>Send emails, etc </li>
               <li>Social media share </li>
             </ul>
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={4} xs={6}>
             <Typography variant="h5">3.Manage donations</Typography>
             <ul>
-              <li>one </li>
-              <li>one </li>
-              <li>one </li>
+              <li>Lorem ipsum </li>
+              <li>Lorem ipsum </li>
+              <li>Lorem ipsum </li>
             </ul>
           </Grid>
         </Grid>
       </Container>
-      <Container sx={{ textAlign: "center" }}>
-        <Button variant="contained" color="substitute">
+      <Container sx={{ textAlign: "center", justifyContent: "center" }}>
+        <Button
+          variant="contained"
+          color="substitute"
+          size="large"
+          sx={{ px: 3 }}
+        >
           Start fundraiser now
         </Button>
       </Container>
