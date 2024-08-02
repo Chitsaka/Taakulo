@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useTheme } from "@emotion/react";
 import { Facebook, X, YouTube } from "@mui/icons-material";
 import {
-  Box,
   Button,
   Divider,
   Grid,
@@ -109,21 +108,36 @@ const Footer = () => {
             sx={{ my: 3 }}
             style={{ width: "100%" }}
           />
-          <Box
-            display="flex"
+
+          <Grid
+            container
             justifyContent="space-between"
             alignItems="center"
             px={5}
           >
-            <Box display="flex" alignItems="center">
-              <Typography mr={2} variant="p" align="center" sx={{ xs: 12 }}>
+            <Grid
+              item
+              md={6}
+              xs={12}
+              display="flex"
+              alignItems="center"
+              justifyContent={{ xs: "center", md: "flex-start" }}
+            >
+              <Typography mr={2} variant="p" align="center">
                 © 2024 Taakulo
               </Typography>
               <Typography mr={3}>T&Cs</Typography>
               <Typography mr={3}>Privacy</Typography>
               <Typography mr={3}>Logo</Typography>
-            </Box>
-            <Box position={"absolute"} textAlign={"center"} right={"20%"}>
+            </Grid>
+            <Grid
+              item
+              md={6}
+              xs={12}
+              display="flex"
+              justifyContent={{ xs: "center", md: "flex-end" }}
+              mt={{ xs: 2, md: 0 }}
+            >
               <IconButton>
                 <Facebook />
               </IconButton>
@@ -139,8 +153,8 @@ const Footer = () => {
               <IconButton>
                 <img src={require("./icons/tik-tok.png")} alt="tiktok" />
               </IconButton>
-            </Box>
-          </Box>
+            </Grid>
+          </Grid>
         </Grid>
       </Container>
     </>
